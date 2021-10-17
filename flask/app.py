@@ -32,4 +32,6 @@ class AddItem(Resource):
 api.add_resource(Item, '/items/<string:name>')
 api.add_resource(AddItem, '/items/Add')
 
-app.run(port=5000, debug=True)
+
+if __name__ == '__main__':
+    app.run(port=5000, debug=True)
